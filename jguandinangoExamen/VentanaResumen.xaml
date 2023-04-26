@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jguandinangoExamen.VentanaResumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="VENTANA RESUMEN" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario Conectado: " FontSize="15" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario2" FontSize="15" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Nombre: " FontSize="15" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="lblNombre" FontSize="15" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Pago Mensual" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="lblPagoMensual" FontSize="15" Placeholder="Pago mensual" Grid.Row="2" Grid.Column="1" IsEnabled="True"/>
+                <Label Text="Pago Total" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="lblPagototal" FontSize="15" Placeholder="Pago Total" Grid.Row="3" Grid.Column="1" IsEnabled="True"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

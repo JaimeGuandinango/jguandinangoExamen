@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jguandinangoExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRO" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtUsuario" FontSize="15" Grid.Row="0" Grid.Column="1"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre: " FontSize="15" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombrer" FontSize="15" Placeholder="Ingresa tu nombre" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Monto Inicial" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMinicial" FontSize="15" Placeholder="Ingresa monto inicial" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Pago Mensual" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPagoMensual" FontSize="15" Placeholder="Pago mensual" Grid.Row="2" Grid.Column="1" IsEnabled="True"/>
+                <Label Text="Pago Total" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtPagot" FontSize="15" Placeholder="Pago Total" Grid.Row="3" Grid.Column="1" IsEnabled="True"/>
+                <Button x:Name="btnCalcularP" Text="Calcular Pago" Clicked="btnCalcularP_Clicked" Grid.Row="4" Grid.Column="0"/>
+            </Grid>
+            <Button x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
